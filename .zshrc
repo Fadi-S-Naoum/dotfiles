@@ -89,4 +89,8 @@ zstyle ':vcs_info:git:*' actionformats '%F{red}[%b|%a]%f %c%u'
 #-------------------------
 PS1='%B%F{cyan}%n@%m:%F{magenta}%~ ${vcs_info_msg_0_} %F{green}%#%f%b ' 
 
+# TODO: Set the path in a variable so that I can make it compatible with MacOS too
+if [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+    source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
 
